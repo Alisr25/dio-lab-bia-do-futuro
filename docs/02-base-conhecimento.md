@@ -20,7 +20,9 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Os dados mockados foram adaptados para representar um cenário simples de controle financeiro pessoal. Foram criados registros fictícios de transações financeiras, contendo data, categoria e valor gasto. Além disso, foram incluídas categorias de despesas e algumas dicas financeiras básicas para que o agente possa sugerir melhorias no controle de gastos.
+
+Esses dados foram organizados em arquivos CSV e JSON para facilitar o carregamento e a utilização pelo agente durante as interações.
 
 ---
 
@@ -29,12 +31,14 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Os arquivos JSON e CSV são carregados no início da execução do sistema utilizando Python. Esses dados são armazenados em variáveis e utilizados como base de conhecimento para fornecer contexto ao modelo de linguagem durante a geração das respostas.
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
-[Sua descrição aqui]
+As informações mais relevantes, como perfil do usuário e histórico recente de transações, são incluídas no contexto do prompt enviado ao modelo de linguagem. Dessa forma, o agente consegue gerar respostas mais personalizadas e baseadas nos dados financeiros fornecidos.
+
+Além disso, as categorias de gastos são utilizadas para classificar automaticamente as despesas informadas pelo usuário.
 
 ---
 
@@ -44,12 +48,21 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 ```
 Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
+- Nome: Alicia Ribeiro
+- Perfil financeiro: Estudante
+- Renda mensal: R$ 2.000
+- Objetivo: Controlar gastos mensais
 
 Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
-...
+- 02/03: Supermercado - R$ 180
+- 03/03: Transporte (Uber) - R$ 45
+- 05/03: Streaming - R$ 39
+- 06/03: Restaurante - R$ 70
+- 07/03: Farmácia - R$ 55
+
+Resumo de categorias:
+- Alimentação: R$ 250
+- Transporte: R$ 45
+- Assinaturas: R$ 39
+- Saúde: R$ 55
 ```
