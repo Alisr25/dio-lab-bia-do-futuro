@@ -1,6 +1,7 @@
 # Código da Aplicação
 
-Esta pasta contém o código do seu agente financeiro.
+Esta pasta contém o código do agente financeiro responsável por analisar gastos do usuário, organizar as informações por categoria e oferecer sugestões simples de controle financeiro.
+O agente utiliza um modelo de linguagem para interpretar as perguntas do usuário e gerar respostas baseadas nos dados disponíveis na base de conhecimento (perfil do usuário, histórico de transações e dicas financeiras).
 
 ## Estrutura Sugerida
 
