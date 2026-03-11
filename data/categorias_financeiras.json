@@ -1,0 +1,28 @@
+{
+  "categorias": [
+    {
+      "nome": "Alimentação",
+      "descricao": "Gastos com supermercado, restaurantes e alimentação em geral"
+    },
+    {
+      "nome": "Transporte",
+      "descricao": "Uber, táxi, transporte público e combustível"
+    },
+    {
+      "nome": "Assinaturas",
+      "descricao": "Serviços recorrentes como streaming e aplicativos"
+    },
+    {
+      "nome": "Saúde",
+      "descricao": "Farmácia, consultas e cuidados médicos"
+    },
+    {
+      "nome": "Educação",
+      "descricao": "Cursos, livros e materiais de estudo"
+    },
+    {
+      "nome": "Lazer",
+      "descricao": "Cinema, viagens, eventos e entretenimento"
+    }
+  ]
+}
